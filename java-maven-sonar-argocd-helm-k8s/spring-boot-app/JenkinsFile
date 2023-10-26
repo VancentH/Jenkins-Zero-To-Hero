@@ -10,8 +10,6 @@ pipeline {
       steps {
         sh 'echo passed'
         // git branch: 'main', url: 'https://github.com/VancentH/Jenkins-Zero-To-Hero.git'
-        cleanWs()
-        checkout scm
       }
     }
     stage('Build and Test') {
